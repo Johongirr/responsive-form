@@ -1,6 +1,6 @@
 # Youtube Clone built by Johongir Rahimov
 
-> ### Visit to [view](https://johongirr.github.io/intuit-form/) a project
+> ### Visit to [view](https://johongirr.github.io/responsive-form/) a project
 
 ## Built with
  * HTML5
