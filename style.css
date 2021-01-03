@@ -85,7 +85,7 @@ a {
     /* form img and form container  */
 .form-img {
     flex-basis: 30%;
-    background: url(/form-img.jpg);
+    background: url("https://colorlib.com/etc/regform/colorlib-regform-16/images/form-img.jpg");
     background-position: bottom right;
     height: 940px;
     line-height: 1.6;
