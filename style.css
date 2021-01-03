@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #282828;
+}
+/* ====== Css variables  ====== */
+:root {
+    --primary-color: #222;
+    --secondary-color: #c70000;
+    --tertiary-color: #b90000;
+    --color-white: #fff;
+    --color-green: #329e5e;
+}
+/* ====== General Styles ====== */
+a,
+input,
+select,
+label,
+span {
+    display: inline-block;
+}
+input:not(.radio),
+select {
+    width: 100%;
+}
+input {
+    padding: 0 0.6rem;
+}
+
+input,
+select {
+    height: 2.7rem;
+}
+a {
+    color: var(--primary-color);
+    text-decoration-color: #d7d7d7;
+}
+ 
+.container {
+    width: 95%;
+    max-width: 90%;
+
+    margin: 3rem auto;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+.mr-1 {
+    margin-right: 1rem;
+}
+.mt-3 {
+    margin-top: 3rem;
+}
+.pr-1 {
+    padding-right: 1rem;
+}
+.pl-1 {
+    padding-left: 1rem;
+}
+ 
+/* ====== Flex ====== */
+.flex {
+    display: flex;
+}
+.flex--justify-between {
+    justify-content: space-between;
+}
+.flex--align-center {
+    align-items: center;
+}
+.flex--justify-end {
+    justify-content: flex-end;
+}
+.flex-gap-3 {
+    column-gap: 3rem;
+    
+}
+
+/* ====== Main styles ======= */
+    /* form img and form container  */
+.form-img {
+    flex-basis: 30%;
+    background: url(/form-img.jpg);
+    background-position: bottom right;
+    height: 940px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+}
+.form-container {
+    flex-basis: 70%;
+    background-color: var(--color-white);
+    padding: 4rem 3rem;
+}
+.form__left, .form__right {
+    flex-basis: 100%;
+}
+/* ====== Form left styles  ======= */
+.form__left label::after {
+    content: '*';
+    margin-left: 0.3rem;
+    color: var(--tertiary-color);
+}
+.form__left label {
+    padding-bottom: 0.5rem;
+}
+ 
+/* ====== Form right styles ======= */
+ 
+.form__right .radio-btn__label {
+    padding: 0 1.5rem 0 0.3rem;
+}
+.form__right label {
+    padding-bottom: 0.5rem;
+}
+.form__right .form__control-radio {
+    height: 4.3rem;
+}
+
+/* ====== Button styles ====== */
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    transition: all 0.5s;
+}
+ 
+.btn--bg-green {
+    background-color: var(--color-green);
+    opacity: 0.9;
+    color: var(--color-white);
+}
+.btn--outline-gray {
+    background-color: var(--color-white);
+    border: 2px solid #a5a3a3;
+    color: #999;
+}
+.btn--bg-green:hover {
+    opacity: 1;
+}
+.btn--outline-gray:hover {
+    background-color: var(--color-green);
+    color: var(--color-white);
+}
+/* ====== Media Queries ====== */
+@media(max-width: 1100px){
+    .form-img {
+        display: none;
+    }
+    .form-container {
+        flex-grow: 1;
+    }
+    
+}
+
+@media(max-width:750px){
+    .flex-column {
+        flex-direction: column;
+    }
+    .form__left, .form__right {
+        width: 100%;
+    }
+    .sm-mt-2 {
+        margin-top: 2rem;
+    }
+}

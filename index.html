@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Signup Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row flex">
+            <div class="form-img">
+                <div class="form-img__text-box">
+                    <h1 class="form-img__title">
+                        REGISTER NOW    
+                    </h1>
+                    <p class="form-img__paragraph">
+                        while seats are available
+                    </p>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="#" class="form">
+                    <div class="row flex flex--align-center flex-column flex-gap-3">
+                        <div class="form__left">
+                            <div class="form__control   mb-2">
+                                <label for="firstname">FIRST NAME</label>
+                                <input type="text" id="firstname" name="firstname" placeholder="Firstname..." required>
+                            </div>
+                            <div class="form__control mb-2">
+                                <label for="lastname">LAST NAME</label>
+                                <input type="text" id="lastname" name="lastname" placeholder="Lastname..." required>
+                            </div>
+                            <div class="form__control mb-2">
+                                <label for="company">COMPANY</label>
+                                <input type="text" id="company" name="company" placeholder="Company..." required>
+                            </div>
+                            <div class="form__control mb-2">
+                                <label for="email">EMAIL</label>
+                                <input type="email" id="email" name="email" placeholder="Email..." required>
+                            </div>
+                            <div class="form__control">
+                                <label for="phone-number">PHONE NUMBER</label>
+                                <input type="tel" id="phone-number" name="phone-number" placeholder="Phone number..." required>
+                            </div>
+                        </div>
+                        <div class="form__right">                           
+                            <div class="form__control mb-2 sm-mt-2">
+                                <div class="form__right-meal-preference flex flex--justify-between">
+                                    <label for="meal">MEAL PREFERENCE</label>
+                                    <a href="#" class="lunch-details__link">Lunch details</a>
+                                </div>
+                                <select name="meal-preference" id="meal">
+                                    <option value="vegetarian">Vegetarian</option>
+                                    <option value="muslim">Muslim</option>
+                                    <option value="kosher">Kosher</option>
+                                    <option value="jain">Jain</option>
+                                    <option value="non-vegetarian">Non Vegetarian</option>
+                                    <option value="japanese">Japanese</option>
+                                </select>
+                            </div>                           
+                            <div class="form__control form__control-radio mb-2">
+                                <div class="form__right-payment-mode flex flex--justify-between">
+                                    <span class="payment-mode__title">
+                                        PAYMENT MODE
+                                    </span>
+                                    <a href="#" class="payment-details__link">
+                                        Payment details
+                                    </a>
+                                </div>
+                                <div class="flex flex--align-center">
+                                    <input type="radio" name="payment-mode" value="Cash" class="radio">
+                                    <label class="radio-btn__label">
+                                        Cash
+                                    </label>
+                                    <input type="radio" name="payment-mode" value="Cheque" class="radio">
+                                    <label class="radio-btn__label">
+                                        Cheque
+                                    </label>
+                                    <input type="radio" name="payment-mode" value="Demand Draf" class="radio">
+                                    <label class="radio-btn__label">
+                                         Demand Draf
+                                    </label>
+                                </div>                              
+                            </div>
+                            <div class="form__control mb-2">
+                                <label for="dd-cheque pb-half">DD / CHEQUE NO</label>
+                                <input type="text" id="dd-cheque" name="dd-cheque" placeholder="DD Cheque..." required>
+                            </div>
+                            <div class="form__control mb-2">
+                                <label for="bank-name pb-half">DRAWN ON ( BANK NAME)</label>
+                                <input type="text" id="bank-name" name="bank-name" placeholder="Bank Name..." required>
+                            </div>
+                            <div class="form__control">
+                                <label for="payable pb-half">PAYABLE AT</label>
+                                <input type="text" id="payable" name="payable" placeholder="Payable at..." required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <label for="donate">DONATE US</label>
+                        <input type="range" id="donate" name="donate" min="0" max="1000" value="100">
+                    </div>
+                    <div class="row mt-3">
+                        <button class="btn btn--bg-green mr-1">
+                            SUBMIT
+                        </button>
+                        <button class="btn btn--outline-gray">
+                            RESET
+                        </button>
+                    </div>
+                </form>
+                 
+            </div>
+        </div>
+    </div>
+    <script src="index.js" async></script>
+</body>
+</html>
