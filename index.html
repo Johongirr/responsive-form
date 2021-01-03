@@ -69,16 +69,16 @@
                                     </a>
                                 </div>
                                 <div class="flex flex--align-center">
-                                    <input type="radio" name="payment-mode" value="Cash" class="radio">
-                                    <label class="radio-btn__label">
+                                    <input id="cash" type="radio" name="payment-mode" value="Cash" class="radio">
+                                    <label for="cash" class="radio-btn__label">
                                         Cash
                                     </label>
-                                    <input type="radio" name="payment-mode" value="Cheque" class="radio">
-                                    <label class="radio-btn__label">
+                                    <input id="cheque" type="radio" name="payment-mode" value="Cheque" class="radio">
+                                    <label for="cheque" class="radio-btn__label">
                                         Cheque
                                     </label>
-                                    <input type="radio" name="payment-mode" value="Demand Draf" class="radio">
-                                    <label class="radio-btn__label">
+                                    <input id="demand-draf" type="radio" name="payment-mode" value="Demand Draf" class="radio">
+                                    <label for="demand-draf" class="radio-btn__label">
                                          Demand Draf
                                     </label>
                                 </div>                              
@@ -99,13 +99,16 @@
                     </div>
                     <div class="row mt-3">
                         <label for="donate">DONATE US</label>
-                        <input type="range" id="donate" name="donate" min="0" max="1000" value="100">
+                        <input type="range" id="donate" name="donate" min="0" max="1000" value="0" step="10">
+                        <span class="donate-amount-text">
+                            Donation amount is $<span class="donate-amount">0</span>
+                        </span>
                     </div>
                     <div class="row mt-3">
                         <button class="btn btn--bg-green mr-1">
                             SUBMIT
                         </button>
-                        <button class="btn btn--outline-gray">
+                        <button type="reset" class="btn btn--outline-gray">
                             RESET
                         </button>
                     </div>

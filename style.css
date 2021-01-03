@@ -123,7 +123,10 @@ a {
 .form__right .form__control-radio {
     height: 4.3rem;
 }
-
+.form__right .form__control-radio label {
+    cursor: pointer;
+}
+ 
 /* ====== Button styles ====== */
 .btn {
     display: inline-block;
@@ -153,6 +156,12 @@ a {
 .btn--outline-gray:hover {
     background-color: var(--color-green);
     color: var(--color-white);
+}
+
+/* ====== Styling range ====== */
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
 }
 /* ====== Media Queries ====== */
 @media(max-width: 1100px){
